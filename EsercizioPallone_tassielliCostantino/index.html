@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallone</title>
+</head>
+
+<body>
+    <center>
+        <h2>BOOM BALOON</h2>
+        <p>Al verificarsi dell'evento di click sul pulsante '+' il pallone si gonfierà del 10%</p><br>
+        <p>Al verificarsi dell'evento di click sul pulsante '-' il pallone si sgonfierà del 10%</p>
+        <b><i>Attenzione a non gonfiare troppo il pallone!!</i></b><br><br>
+        <span style="font-size: 100px;" id="pallone">&#9917;</span><br>
+        <div id="description"></div><br>
+        <button id="gonfio" onclick="Ingrandisci()">+</button>
+        <button id="sgonfio" onclick="Rimpicciolisci()">-</button><br><br>
+        <button id="gonfio" onclick="Standard()">Ripristina</button>
+    </center>
+    <script src="controller.js"></script>
+</body>
+
+</html>
