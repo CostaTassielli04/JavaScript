@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>QrCode</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+    <script src="controller.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <h1>Esercizio QrCode</h1><br>
+
+        <p>Inserisci il sito che vuoi trasformare in qrcode:</p>
+        <input type="url" id="sito"><br>
+        <br>
+        <br>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="dim">
+            <option selected>Scegli dimensione:</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+          </select>
+        <br>
+        <br>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="colore">
+            <option selected>Scegli colore QR:</option>
+            <option value="000000">Nero</option>
+            <option value="FF0000">Rosso</option>
+            <option value="0000ff">Blu</option>
+          </select>
+        <br>
+        <br>
+        <select class="form-select form-select-lg mb-3 " aria-label=".form-select-lg example" id="sfondo">
+            <option selected>Scegli il colore di sfondo del QR:</option>
+            <option value="FFFFFF">Bianco</option>
+            <option value="000000">Nero</option>
+            <option value="00ff00">Verde</option>
+          </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary" id="genera">Genera</button>
+        <br>
+        <br>
+        <div id="qrcode"></div>
+    </center>
+</body>
+
+</html>
